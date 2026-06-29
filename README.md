@@ -29,6 +29,3 @@ If you use this code, please cite:
   year={2026},
   note={Under submission}
 }
-## Installation
-```bash
-pip install pytorch-tabnet torch torchvision
