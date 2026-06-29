@@ -1,42 +1,35 @@
-# ATabNet: Attention and Feature-Refined TabNet for Interpretable Hyperspectral Image Classification
+# ATabNet: Attention and Feature-Refined TabNet for Hyperspectral Image Classification
 
 This repository contains the implementation of:
 
-**ATabNet: Attention and Feature-Refined TabNet for Interpretable Hyperspectral Image Classification**
+**ATabNet: Attention and Feature-Refined TabNet for Interpretable Hyperspectral Image Classification (IEEE GRSL, under submission)**
 
-📄 Manuscript (IEEE GRSL, under submission):  
-Will be made available after acceptance.
+📌 Code and data: https://github.com/chiran7/ATabNet  
+📌 Paper: To be updated upon publication in IEEE GRSL
 
-📊 Code and datasets:  
-To be released at: https://github.com/chiran7/ATabNet
-
----
 
 ## Overview
+ATabNet is an attention-enhanced TabNet model for hyperspectral image (HSI) classification. It improves feature representation by integrating spatial–spectral attention and feature refinement modules while maintaining interpretability.
 
-ATabNet is an attention-enhanced TabNet architecture designed for hyperspectral image (HSI) classification. It integrates spatial–spectral attention mechanisms and feature refinement modules to improve discriminative representation learning while maintaining interpretability.
-
-The method extends TabNet with:
+Key components:
 - Convolutional Block Attention Module (CBAM)
-- Gated feature fusion mechanism
+- Gated feature fusion
 - Convolutional feature refinement
-- Improved decision-step feature aggregation
+- Enhanced decision-step feature aggregation
 
----
+Training: 
+python train_atabnet_hsi.py
 
-## Architecture
+Citation
 
-The framework enhances TabNet by introducing:
-- Attention-based mask refinement
-- Feature transformer with convolutional enhancement
-- Step-wise decision aggregation for final classification
-
-(Architecture figures are provided in the paper.)
-
----
-
+If you use this code, please cite:
+@article{atabnet2026,
+  title={ATabNet: Attention and Feature-Refined TabNet for Hyperspectral Image Classification},
+  author={Shah, Chiranjibi and Du, Qian and others},
+  journal={IEEE Geoscience and Remote Sensing Letters},
+  year={2026},
+  note={Under submission}
+}
 ## Installation
-
 ```bash
-pip install pytorch-tabnet
-pip install torch torchvision
+pip install pytorch-tabnet torch torchvision
