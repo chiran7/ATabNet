@@ -1,30 +1,42 @@
-# Enhanced TabNet: Attentive interpretable tabular learning for hyperspectral image classification
-# 
+# ATabNet: Attention and Feature-Refined TabNet for Interpretable Hyperspectral Image Classification
 
+This repository contains the implementation of:
 
-The code for "Enhanced TabNet: Attentive interpretable tabular learning for hyperspectral image classification" https://doi.org/10.3390/rs14030716
+**ATabNet: Attention and Feature-Refined TabNet for Interpretable Hyperspectral Image Classification**
 
-#
+📄 Manuscript (IEEE GRSL, under submission):  
+Will be made available after acceptance.
 
+📊 Code and datasets:  
+To be released at: https://github.com/chiran7/ATabNet
 
+---
 
-![image](https://github.com/chiran7/TabNets/assets/25559452/551dfa6c-393a-4ea0-becb-3084e9895c76)
+## Overview
 
-#
+ATabNet is an attention-enhanced TabNet architecture designed for hyperspectral image (HSI) classification. It integrates spatial–spectral attention mechanisms and feature refinement modules to improve discriminative representation learning while maintaining interpretability.
 
-![image](https://github.com/chiran7/TabNets/assets/25559452/b71d82eb-7f93-4e66-88dc-ef53d60a5616)
+The method extends TabNet with:
+- Convolutional Block Attention Module (CBAM)
+- Gated feature fusion mechanism
+- Convolutional feature refinement
+- Improved decision-step feature aggregation
 
+---
 
-# Installation:
+## Architecture
 
+The framework enhances TabNet by introducing:
+- Attention-based mask refinement
+- Feature transformer with convolutional enhancement
+- Step-wise decision aggregation for final classification
+
+(Architecture figures are provided in the paper.)
+
+---
+
+## Installation
+
+```bash
 pip install pytorch-tabnet
-
-# Training:
-python train_tabnets_HSI.py
-
-
-# Citation
-# Please kindly cite the papers if you find you find the work useful.
-1. C. Shah, Q. Du, and Y. Xu, "Enhanced TabNet: Attentive interpretable tabular learning for hyperspectral image classification," in Remote Sensing, vol. 14(3),776, 2022, https://doi.org/10.3390/rs14030716
-2. (Arik, S. O., & Pfister, T. (2019). TabNet: Attentive Interpretable Tabular Learning. arXiv preprint arXiv:1908.07442.) https://arxiv.org/pdf/1908.07442.pdf
-3. pytorch implementation of TabNet by Arik, S. O., & Pfister, T. (2019): dreamquark-ai.github.io/tabnet/
+pip install torch torchvision
