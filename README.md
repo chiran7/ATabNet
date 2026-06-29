@@ -1,21 +1,20 @@
 # ATabNet: Attention and Feature-Refined TabNet for Hyperspectral Image Classification
 
-This repository contains the implementation of:
-
-**ATabNet: Attention and Feature-Refined TabNet for Interpretable Hyperspectral Image Classification (IEEE GRSL, under submission)**
-
-📌 Code and data: https://github.com/chiran7/ATabNet  
-📌 Paper: To be updated upon publication in IEEE GRSL
-
+**ATabNet (IEEE GRSL submission)**
 
 ## Overview
-ATabNet is an attention-enhanced TabNet model for hyperspectral image (HSI) classification. It improves feature representation by integrating spatial–spectral attention and feature refinement modules while maintaining interpretability.
+ATabNet is an attention-enhanced TabNet architecture for hyperspectral image (HSI) classification. It improves spatial–spectral feature learning using attention and feature refinement while preserving interpretability.
 
-Key components:
+Main components:
 - Convolutional Block Attention Module (CBAM)
 - Gated feature fusion
-- Convolutional feature refinement
-- Enhanced decision-step feature aggregation
+- Convolutional refinement
+- Enhanced decision-step aggregation
+
+
+## Installation
+```bash
+pip install pytorch-tabnet torch torchvision
 
 Training: 
 python train_ATabNet_HSI.py
