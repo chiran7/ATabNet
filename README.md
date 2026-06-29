@@ -18,7 +18,7 @@ Key components:
 - Enhanced decision-step feature aggregation
 
 Training: 
-python train_atabnet_hsi.py
+python train_ATabNet_HSI.py
 
 Citation
 
